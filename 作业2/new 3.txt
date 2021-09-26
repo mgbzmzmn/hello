@@ -1,0 +1,20 @@
+#include <stdio.h>
+int main(){
+    int i,j,m=0;
+    int n=20000;
+    for(i=2;i<=n;i++){
+        for(j=2;j<=i;j++){
+            if(j==i){
+                printf("%3d",i);
+                m++;
+            }
+            if(i%j==0){
+                break;
+            }
+            if(m%5==0){
+                printf("\n");
+            }
+        }
+    }
+    return 0;
+}
